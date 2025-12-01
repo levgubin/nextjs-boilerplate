@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BMCARE Services Limited</title>
+    <meta name="description" content="Contact BMCARE Services Limited for your health and social care staffing needs.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>BMCARE <span>Services</span></h1>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in Touch With BMCARE Services Limited</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>BMCARE SERVICES LIMITED</h2>
+                    <p class="tagline">Compassion Care You Can Trust</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:0831042231">(083) 104 2231</a></p>
+                                <p class="contact-note">Available 24/7 for urgent staffing requests</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@bmcareservices.com">info@bmcareservices.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🏢</div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>37 Kilkeevan Park<br>Castlerea, Co. Roscommon<br>Ireland</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🌐</div>
+                            <div class="contact-text">
+                                <h4>BrightHR</h4>
+                                <p>Visit our BrightHR portal for additional resources</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Section -->
+                    <div class="map-section">
+                        <h3>Find Us</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://maps.google.com/maps?q=37+Kilkeevan+Park,+Castlerea,+Co.+Roscommon,+Ireland&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0; border-radius: 10px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="BMCARE Services Location - 37 Kilkeevan Park, Castlerea, Co. Roscommon">
+                            </iframe>
+                        </div>
+                        <p class="map-link">
+                            <a href="https://www.google.com/maps/search/?api=1&query=37+Kilkeevan+Park,+Castlerea,+Co.+Roscommon,+Ireland" target="_blank" rel="noopener noreferrer">
+                                View on Google Maps →
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="contact-features">
+                        <h3>Why Contact Us?</h3>
+                        <ul>
+                            <li>Flexible staffing solutions – temporary, long-term, or emergency cover</li>
+                            <li>24/7 availability for urgent staffing requests</li>
+                            <li>Personalised matching of staff to client needs</li>
+                            <li>Ongoing support and communication</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <div id="formSuccessMessage" class="form-message form-success" style="display: none;">
+                        <h3>Thank you for your message!</h3>
+                        <p>While this form doesn't send emails automatically, you can send your message directly via email:</p>
+                        <div class="success-actions">
+                            <a href="#" id="openEmailClient" class="btn btn-primary">Open Email Client</a>
+                            <button type="button" class="btn btn-outline" id="sendAnotherMessage">Send Another Message</button>
+                        </div>
+                        <p class="success-contact-info">
+                            Or contact us directly:<br>
+                            <strong>Phone:</strong> <a href="tel:0831042231">(083) 104 2231</a><br>
+                            <strong>Email:</strong> <a href="mailto:info@bmcareservices.com">info@bmcareservices.com</a>
+                        </p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="health-social-care">Health & Social Care</option>
+                                <option value="catering">Catering Services</option>
+                                <option value="domestic-support">Domestic Support</option>
+                                <option value="emergency-cover">Emergency Cover</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="submitButton">Send Message</button>
+                        <p class="form-note">
+                            Or contact us directly: 
+                            <a href="tel:0831042231">(083) 104 2231</a> | 
+                            <a href="mailto:info@bmcareservices.com">info@bmcareservices.com</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BMCARE Services Limited</h3>
+                    <p>"Where care and compassion meet"</p>
+                    <p>Trusted provider of health and social care services across Ireland.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>📞 <a href="tel:0831042231">(083) 104 2231</a></p>
+                    <p>📧 <a href="mailto:info@bmcareservices.com">info@bmcareservices.com</a></p>
+                    <p>🏢 37 Kilkeevan Park, Castlerea, Co. Roscommon</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BMCARE SERVICES LIMITED. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
