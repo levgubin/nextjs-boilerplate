@@ -1,8 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - BMCARE Services Limited',
-  description: 'Contact BMCARE Services Limited for your health and social care staffing needs.',
+  title: 'Contact Us',
+  description: 'Contact BMCARE Services Limited for your health and social care staffing needs. Available 24/7 across Ireland.',
+  openGraph: {
+    title: 'Contact Us - BMCARE Services Limited',
+    description: 'Contact BMCARE Services Limited for your health and social care staffing needs.',
+    type: 'website',
+  },
 };
 
 export default function ContactLayout({

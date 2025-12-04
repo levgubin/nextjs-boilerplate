@@ -2,8 +2,13 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Us - BMCARE Services Limited',
-  description: 'Learn about BMCARE Services Limited, our mission, vision, and core values.',
+  title: 'About Us',
+  description: 'Learn about BMCARE Services Limited, our mission, vision, and core values. Trusted and professional care services across Ireland.',
+  openGraph: {
+    title: 'About Us - BMCARE Services Limited',
+    description: 'Learn about BMCARE Services Limited, our mission, vision, and core values.',
+    type: 'website',
+  },
 };
 
 export default function About() {

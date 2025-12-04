@@ -1,5 +1,29 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'BMCARE Services Limited - Compassionate Care You Can Trust',
+  description:
+    'BMCARE Services Limited provides high-quality Health and Social Care, Catering, and Domestic Support services across Ireland. Trusted staffing agency in Castlerea, Co. Roscommon.',
+  keywords: [
+    'health care services Ireland',
+    'social care services',
+    'care staffing agency',
+    'domestic support Ireland',
+    'catering services Ireland',
+    'home care services',
+    'nursing home staff',
+    'health care assistants',
+  ],
+  openGraph: {
+    title: 'BMCARE Services Limited - Compassionate Care You Can Trust',
+    description:
+      'High-quality Health and Social Care, Catering, and Domestic Support services across Ireland.',
+    type: 'website',
+    locale: 'en_IE',
+  },
+};
 
 export default function Home() {
   return (

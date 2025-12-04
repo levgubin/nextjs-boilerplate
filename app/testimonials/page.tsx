@@ -3,8 +3,13 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Testimonials - BMCARE Services Limited',
-  description: 'Read what our clients have to say about BMCARE Services Limited.',
+  title: 'Testimonials',
+  description: 'Read what our clients have to say about BMCARE Services Limited. Real testimonials from satisfied clients across Ireland.',
+  openGraph: {
+    title: 'Testimonials - BMCARE Services Limited',
+    description: 'Read what our clients have to say about BMCARE Services Limited.',
+    type: 'website',
+  },
 };
 
 export default function Testimonials() {
